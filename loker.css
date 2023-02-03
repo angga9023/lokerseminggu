@@ -1,0 +1,462 @@
+*   {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font: 'poppins', sans-serif;
+    background-color: whitesmoke;
+    color: white;
+    padding: 8rem 0 0;
+}
+
+/* navbar start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(4, 48, 143, 0.8);
+    border-bottom: 2px solid #4f4d50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar .nama-navbar{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.navbar .nama-navbar img{
+    width: 50px; margin-right: .5rem;
+}
+
+.navbar .nama-navbar span{
+    color:rgb(175, 8, 8);
+}
+
+.navbar .navbar-nav a{
+    color: white;
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: inline-block;
+
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(221, 28, 28);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: .1rem;
+    border-bottom: .2rem solid rgb(194, 17, 17);
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: .3s;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(1);
+}
+
+.navbar .navbar-extra{
+    display: flex;
+    align-content: center;
+}
+
+.navbar .navbar-extra a{
+    color: white;
+    margin: 0 .5rem;
+}
+
+.navbar .navbar-extra a:hover{
+    color: rgb(194, 17, 17);
+}
+
+.navbar-extra .input-search{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.navbar-extra .input-search input{
+    width: 100%;
+    font-size: 1rem;
+    background: none;
+    color: white;
+    padding: 0 8px;
+}
+
+.navbar-extra .input-search:nth-child(1){
+    padding-right: 8px;
+}
+
+.navbar .navbar-extra .input-search .btn{
+    color: white;
+    background: none;
+    margin: 5px 0 0;
+}
+
+#humberger-menu{
+    display: none;
+}
+
+/* section kontener */
+.kontener {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* KONTENER KIRI */
+.kontener .kontenerkiri{
+    max-width: 50rem;
+}
+
+.kontener .kontenerpt1{
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+}
+
+.kontener .kontenerkiri .kontenerpt1{
+    display: flex;
+    color: black;
+}
+
+.kontener .kontenerkiri .kontenerpt1 .gambar1 img,
+.kontener .kontenerkiri .kontenerpt1 .gambar2 img,
+.kontener .kontenerkiri .kontenerpt1 .gambar3 img,
+.kontener .kontenerkiri .kontenerpt1 .gambar4 img,
+.kontener .kontenerkiri .kontenerpt1 .gambar5 img,
+.kontener .kontenerkiri .kontenerpt1 .gambar6 img,
+.kontener .kontenerkiri .kontenerpt1 .gambar7 img,
+.kontener .kontenerkiri .kontenerpt1 .gambar8 img{
+    width: 200px;
+    height: 200px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 10px 10px;
+    margin: 1rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,.8);
+    transition: .2s;
+} 
+
+.kontener .kontenerkiri .kontenerpt1 .gambar1 :hover,
+.kontener .kontenerkiri .kontenerpt1 .gambar2 :hover,
+.kontener .kontenerkiri .kontenerpt1 .gambar3 :hover,
+.kontener .kontenerkiri .kontenerpt1 .gambar4 :hover,
+.kontener .kontenerkiri .kontenerpt1 .gambar5 :hover,
+.kontener .kontenerkiri .kontenerpt1 .gambar6 :hover,
+.kontener .kontenerkiri .kontenerpt1 .gambar7 :hover,
+.kontener .kontenerkiri .kontenerpt1 .gambar8 :hover{
+    transform: scale(1.05);
+}
+
+.kontener .kontenerkiri .kontenerpt1 .keteranganpt{
+    max-width: 28rem;
+    font-size: .9rem;
+    align-items: center;
+    padding-top: 1.2rem;
+    margin-left: .6rem;
+}
+
+.kontener .kontenerkiri .kontenerpt1 .keteranganpt span{
+    font-weight: 700;
+    color: rgb(49, 11, 11);
+}
+
+.kontener .kontenerkiri .kontenerpt1 .keteranganpt a{
+    color: black;
+}
+
+.kontener .kontenerkiri .kontenerpt1 .keteranganpt a:hover{
+    color: red;
+}
+
+
+/* KONTENER KANAN */
+
+.kontener .kontener-kanan{
+    width: 25rem;
+}
+
+.kontener-kanan .loker-populer h1:nth-child(1){
+    color: rgb(242, 243, 247);
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 3rem auto;
+    max-width: 20rem;
+    text-shadow: 2px 3px 3px black;
+    background-color: #4f4d50;
+    padding: 1rem;
+    border-radius: 6px 6px 6px 6px ;
+    box-shadow: 5px 4px 2px rgba(1,1,3,.8);
+}
+
+.kontener-kanan .loker-populer h1:nth-child(2){
+    color: rgb(16, 178, 228);
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    margin: 5rem 0 0;
+    padding: 2px;
+    text-shadow: 4px 3px 3px black;
+}
+
+.kontener-kanan .loker-populer .loker-pop{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kontener-kanan .loker-populer .loker-pop .loker-pop1{
+    margin: 0 auto;
+}
+
+.kontener-kanan .loker-populer .loker-pop .loker-pop1 .keterangan{
+    max-width: 8rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.kontener-kanan .loker-populer .loker-pop .loker-pop1 .gambar11 img,
+.kontener-kanan .loker-populer .loker-pop .loker-pop1 .gambar22 img,
+.kontener-kanan .loker-populer .loker-pop .loker-pop1 .gambar33 img,
+.kontener-kanan .loker-populer .loker-pop .loker-pop1 .gambar44 img{
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 10px 10px;
+    margin: 1rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,.8);
+}
+
+.kontener-kanan .loker-populer .loker-pop .loker-pop1 .keterangan h2{
+    color: black;
+    font-size: .8rem;
+}
+
+.kontener-kanan .loker-populer .loker-pop .loker-pop1 .keterangan p {
+    color: black;
+    font-size: .8rem;
+    font-style: unset;
+}
+
+.kontener-kanan .loker-populer .loker-pop .loker-pop1 .keterangan h2:hover{
+    color: red;
+} 
+
+/* footer start */
+footer{
+    text-align: center;
+    background-color: rgba(4, 48, 143, 0.8);
+}
+
+footer .socials a, footer .links a{
+    color: white;
+    margin: 0 1.5rem;
+}
+
+footer .socials a:hover, footer .links a:hover{
+    color: red;
+}
+
+footer .socials, footer .links{
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+footer .credit{
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+footer .credit p a{
+    color: black;
+    font-weight: 700;
+}
+
+footer .credit p a:hover{
+    color: red;
+} 
+
+/* footer and */
+
+/* tampilan media */
+/* media laptop */
+@media (max-width:1366px){
+    html{
+        font-size: 75%;
+    }
+}
+
+
+/* media tablet */
+@media (max-width:768px){
+    html{
+        font-size: 62%;
+    }
+
+    .navbar .nama-navbar img{
+        width: 25px; margin-right: .2rem;
+    }
+
+    #humberger-menu{
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .navbar .navbar-extra .input-search input{
+        font-size: 1.3rem;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgb(73, 72, 72);
+        width: 30rem;
+        height: 100vh;
+        transition: .3s;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        color: aliceblue;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(.3);
+    }
+
+    .kontener .kontenerkiri .kontenerpt1 .gambar1 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar2 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar3 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar4 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar5 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar6 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar7 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar8 a img{
+        width: 160px;
+        height: 160px;    
+    } 
+
+    .kontener .kontenerkiri .kontenerpt1 .keteranganpt{
+        height: 160px;
+        margin-top: 1rem;
+        align-content: center;
+    }
+    
+    .kontener .kontenerkiri .kontenerpt1 .keteranganpt p{
+        font-size: 1rem;
+    }
+
+    .kontener-kanan .loker-populer .loker-pop .loker-pop1 .gambar11 img,
+    .kontener-kanan .loker-populer .loker-pop .loker-pop1 .gambar22 img,
+    .kontener-kanan .loker-populer .loker-pop .loker-pop1 .gambar33 img,
+    .kontener-kanan .loker-populer .loker-pop .loker-pop1 .gambar44 img{
+    width: 80px;
+    height: 80px;
+    }
+
+    .kontener .kontener-kanan .loker-populer .loker-pop .loker-pop1 .keterangan h2{
+        font-size: 1rem;
+    }
+}
+
+
+/* media hp mobile */
+@media (max-width:450px){
+    html{
+        font-size: 55%;
+    }
+
+    .navbar {
+        padding: 1.4rem 4%;
+    }
+
+    .navbar .nama-navbar{
+        font-size: 1.8rem;
+    }
+
+    .navbar .navbar-extra .input-search{
+        max-width: 13rem;
+    }
+
+    .kontener{
+        flex-wrap: wrap;
+    }
+
+    .kontener .kontenerkiri .kontenerpt1 .gambar1 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar2 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar3 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar4 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar5 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar6 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar7 a img,
+    .kontener .kontenerkiri .kontenerpt1 .gambar8 a img{
+        width: 120px;
+        height: 120px;    
+    }
+
+    .kontener .kontenerkiri .kontenerpt1{
+        margin-top: 3rem;
+    }
+
+    .kontener .kontenerkiri .kontenerpt1 .keteranganpt{
+        margin-top: -1rem;
+    }
+
+    .kontener .kontener-kanan{
+        width: 50rem;
+    }
+
+    .kontener .kontenerkiri .kontenerpt1:nth-child(1) .keteranganpt p,
+    .kontener .kontenerkiri .kontenerpt1:nth-child(2) .keteranganpt p{
+        margin-top: -1rem;
+    }
+
+    .kontener .kontener-kanan .loker-populer h1:nth-child(1){
+        margin: 7rem auto 0;
+        font-size: 1.4rem;
+        max-width: 28rem;
+    }
+
+    .kontener .kontener-kanan .loker-populer h1:nth-child(2){
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+        /* display:; */
+    }
+
+}
